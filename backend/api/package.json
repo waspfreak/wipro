@@ -1,0 +1,47 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Package to hold scripts to ease usage of api",
+  "main": "build/index.js",
+  "scripts": {
+    "lint": "../../node_modules/eslint/bin/eslint.js --fix .",
+    "token": "yarn test token.util",
+    "prep-lambda": "node scripts/prep-lambda > amplify/backend/function/lononewebonetask/src/api-id.json",
+    "createLocalData": "node -r esm test/utils/SeedDatabase.js",
+    "deleteLocalData": "rm -rf amplify/mock-data/dynamodb/fake_us-fake-1.db",
+    "test": "jest",
+    "test-consumer": "jest test/contract/consumer --runInBand",
+    "test-provider": "jest test/contract/provider --runInBand --force-exit"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-amplify": "^2.2.0",
+    "aws-appsync": "^3.0.2",
+    "aws-sdk": "^2.596.0",
+    "cross-fetch": "^3.0.4",
+    "graphql-tag": "^2.10.1",
+    "zen-observable": "^0.8.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@pact-foundation/pact": "^9.5.1",
+    "babel-jest": "^25.1.0",
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-cmd": "^3.0.0",
+    "sql-template-strings": "^2.2.2",
+    "sqlite": "^3.0.3"
+  },
+  "config": {
+    "pact_do_not_track": true
+  }
+}

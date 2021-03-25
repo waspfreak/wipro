@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auth Stack Compiles correctly 1`] = `
+Object {
+  "Parameters": Object {
+    "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127ArtifactHash153DDF51": Object {
+      "Description": "Artifact hash for asset \\"0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127\\"",
+      "Type": "String",
+    },
+    "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127S3Bucket51E75062": Object {
+      "Description": "S3 bucket for asset \\"0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127\\"",
+      "Type": "String",
+    },
+    "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127S3VersionKey63DC64B4": Object {
+      "Description": "S3 key for asset version \\"0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127\\"",
+      "Type": "String",
+    },
+    "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0ArtifactHash830960F7": Object {
+      "Description": "Artifact hash for asset \\"85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0\\"",
+      "Type": "String",
+    },
+    "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0S3BucketD544D804": Object {
+      "Description": "S3 bucket for asset \\"85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0\\"",
+      "Type": "String",
+    },
+    "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0S3VersionKey143E4E68": Object {
+      "Description": "S3 key for asset version \\"85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0\\"",
+      "Type": "String",
+    },
+  },
+  "Resources": Object {
+    "authenticatedroleauth": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": Object {
+                "ForAnyValue:StringLike": Object {
+                  "cognito-identity.amazonaws.com:amr": "authenticated",
+                },
+                "StringEquals": Object {
+                  "cognito-identity.amazonaws.com:aud": Object {
+                    "Ref": "authidentitypool",
+                  },
+                },
+              },
+              "Effect": "Allow",
+              "Principal": Object {
+                "Federated": "cognito-identity.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "RoleName": "authenticated-role-auth",
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "authidentitypool": Object {
+      "Properties": Object {
+        "AllowUnauthenticatedIdentities": false,
+        "CognitoIdentityProviders": Array [
+          Object {
+            "ClientId": Object {
+              "Ref": "authuserpoolclient",
+            },
+            "ProviderName": Object {
+              "Fn::GetAtt": Array [
+                "authuserpool56A639C7",
+                "ProviderName",
+              ],
+            },
+          },
+        ],
+      },
+      "Type": "AWS::Cognito::IdentityPool",
+    },
+    "authidentityprovider": Object {
+      "Properties": Object {
+        "AttributeMapping": Object {
+          "email": "preferred_username",
+          "preferred_username": "oid",
+        },
+        "ProviderDetails": Object {
+          "attributes_request_method": "GET",
+          "authorize_scopes": "phone, email, profile, openid, aws.cognito.signin.user.admin",
+          "client_id": "{{resolve:secretsmanager:arn:aws:secretsmanager:eu-west-2:219756287403:secret:lon-owot-dev-azure-ad-configuration-secret-THhzhn:SecretString:msft_application_client_id::}}",
+          "client_secret": "{{resolve:secretsmanager:arn:aws:secretsmanager:eu-west-2:219756287403:secret:lon-owot-dev-azure-ad-configuration-secret-THhzhn:SecretString:msft_secret_dev::}}",
+          "oidc_issuer": "https://sts.windows.net/{{resolve:secretsmanager:arn:aws:secretsmanager:eu-west-2:219756287403:secret:lon-owot-dev-azure-ad-configuration-secret-THhzhn:SecretString:msft_directory_tenant_id::}}",
+        },
+        "ProviderName": "azuread",
+        "ProviderType": "OIDC",
+        "UserPoolId": Object {
+          "Ref": "authuserpool56A639C7",
+        },
+      },
+      "Type": "AWS::Cognito::UserPoolIdentityProvider",
+    },
+    "authpostConfirmation17943528": Object {
+      "DependsOn": Array [
+        "authpostConfirmationServiceRoleDefaultPolicy3C9EC323",
+        "authpostConfirmationServiceRoleAFF71030",
+      ],
+      "Properties": Object {
+        "Code": Object {
+          "S3Bucket": Object {
+            "Ref": "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0S3BucketD544D804",
+          },
+          "S3Key": Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                Object {
+                  "Fn::Select": Array [
+                    0,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0S3VersionKey143E4E68",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "Fn::Select": Array [
+                    1,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters85927b398fae0d62c07fbba9f715077f30da01d830bb7f6f1caa84cf07ffe5e0S3VersionKey143E4E68",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+        "Environment": Object {
+          "Variables": Object {
+            "API_ONETASK_GRAPHQLAPIIDOUTPUT": "7u6btos2jvbwreasetliceacp4",
+            "ENV": "auth",
+            "ENV_APPSYNC": "devtwo",
+            "REGION": "eu-west-2",
+            "USER_TABLE": Object {
+              "Fn::ImportValue": "dynamodb:ExportsOutputRefusersTable12EF4ADD78D2FEE5",
+            },
+          },
+        },
+        "FunctionName": "auth-postConfirmation",
+        "Handler": "index.handler",
+        "Role": Object {
+          "Fn::GetAtt": Array [
+            "authpostConfirmationServiceRoleAFF71030",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs10.x",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "authpostConfirmationPostConfirmationCognito19D54D86": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "authpostConfirmation17943528",
+            "Arn",
+          ],
+        },
+        "Principal": "cognito-idp.amazonaws.com",
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "authpostConfirmationServiceRoleAFF71030": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": Object {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "authpostConfirmationServiceRoleDefaultPolicy3C9EC323": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "dynamodb:*",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "authpostConfirmationServiceRoleDefaultPolicy3C9EC323",
+        "Roles": Array [
+          Object {
+            "Ref": "authpostConfirmationServiceRoleAFF71030",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "authpreTokenGeneration42998041": Object {
+      "DependsOn": Array [
+        "authpreTokenGenerationServiceRoleDefaultPolicyAF4C2A59",
+        "authpreTokenGenerationServiceRole84A97994",
+      ],
+      "Properties": Object {
+        "Code": Object {
+          "S3Bucket": Object {
+            "Ref": "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127S3Bucket51E75062",
+          },
+          "S3Key": Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                Object {
+                  "Fn::Select": Array [
+                    0,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127S3VersionKey63DC64B4",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "Fn::Select": Array [
+                    1,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters0dc446f86788db3cb2d0ee5e05083f5c61c897290921021ab0c743424d7a1127S3VersionKey63DC64B4",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+        "Environment": Object {
+          "Variables": Object {
+            "API_ONETASK_GRAPHQLAPIIDOUTPUT": "7u6btos2jvbwreasetliceacp4",
+            "ENV": "auth",
+            "ENV_APPSYNC": "devtwo",
+            "REGION": "eu-west-2",
+            "TOPIC_MEMBER_TABLE": Object {
+              "Fn::ImportValue": "dynamodb:ExportsOutputReftopicsMemberTableEAC2634F7251B2E8",
+            },
+          },
+        },
+        "FunctionName": "auth-preTokenGeneration",
+        "Handler": "index.handler",
+        "Role": Object {
+          "Fn::GetAtt": Array [
+            "authpreTokenGenerationServiceRole84A97994",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs10.x",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "authpreTokenGenerationPreTokenGenerationCognito1E1A5A31": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "authpreTokenGeneration42998041",
+            "Arn",
+          ],
+        },
+        "Principal": "cognito-idp.amazonaws.com",
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "authpreTokenGenerationServiceRole84A97994": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": Object {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "authpreTokenGenerationServiceRoleDefaultPolicyAF4C2A59": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "dynamodb:*",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "authpreTokenGenerationServiceRoleDefaultPolicyAF4C2A59",
+        "Roles": Array [
+          Object {
+            "Ref": "authpreTokenGenerationServiceRole84A97994",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "authuserpool56A639C7": Object {
+      "Properties": Object {
+        "AutoVerifiedAttributes": Array [
+          "email",
+        ],
+        "EmailVerificationMessage": "Your verification code is {####}",
+        "EmailVerificationSubject": "Your verification code",
+        "LambdaConfig": Object {
+          "PostConfirmation": Object {
+            "Fn::GetAtt": Array [
+              "authpostConfirmation17943528",
+              "Arn",
+            ],
+          },
+          "PreTokenGeneration": Object {
+            "Fn::GetAtt": Array [
+              "authpreTokenGeneration42998041",
+              "Arn",
+            ],
+          },
+        },
+        "Schema": Array [
+          Object {
+            "Mutable": true,
+            "Name": "email",
+            "Required": false,
+          },
+          Object {
+            "Mutable": true,
+            "Name": "preferred_username",
+            "Required": false,
+          },
+        ],
+        "UsernameAttributes": Array [
+          "email",
+        ],
+      },
+      "Type": "AWS::Cognito::UserPool",
+    },
+    "authuserpoolclient": Object {
+      "Properties": Object {
+        "AllowedOAuthFlows": Array [
+          "code",
+          "implicit",
+        ],
+        "AllowedOAuthFlowsUserPoolClient": true,
+        "AllowedOAuthScopes": Array [
+          "phone",
+          "email",
+          "openid",
+          "aws.cognito.signin.user.admin",
+          "profile",
+        ],
+        "CallbackURLs": Array [
+          "otask://start",
+        ],
+        "ExplicitAuthFlows": Array [
+          "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+          "ALLOW_CUSTOM_AUTH",
+          "ALLOW_USER_SRP_AUTH",
+          "ALLOW_REFRESH_TOKEN_AUTH",
+        ],
+        "LogoutURLs": Array [
+          "otask://signout",
+        ],
+        "ReadAttributes": Array [
+          "preferred_username",
+          "profile",
+        ],
+        "RefreshTokenValidity": 30,
+        "SupportedIdentityProviders": Array [
+          Object {
+            "Ref": "authidentityprovider",
+          },
+        ],
+        "UserPoolId": Object {
+          "Ref": "authuserpool56A639C7",
+        },
+      },
+      "Type": "AWS::Cognito::UserPoolClient",
+    },
+    "authuserpooldomain": Object {
+      "Properties": Object {
+        "Domain": "onetaskexperimental-b",
+        "UserPoolId": Object {
+          "Ref": "authuserpool56A639C7",
+        },
+      },
+      "Type": "AWS::Cognito::UserPoolDomain",
+    },
+    "unauthenticatedroleauth": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": Object {
+                "ForAnyValue:StringLike": Object {
+                  "cognito-identity.amazonaws.com:amr": "unauthenticated",
+                },
+                "StringEquals": Object {
+                  "cognito-identity.amazonaws.com:aud": Object {
+                    "Ref": "authidentitypool",
+                  },
+                },
+              },
+              "Effect": "Allow",
+              "Principal": Object {
+                "Federated": "cognito-identity.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "RoleName": "unauthenticated-role-auth",
+      },
+      "Type": "AWS::IAM::Role",
+    },
+  },
+}
+`;

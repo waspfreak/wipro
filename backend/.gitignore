@@ -1,0 +1,15 @@
+!jest.config.js
+*.d.ts
+node_modules
+*.js
+!cdk/lambda/**/src/*.js
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+#MacOS
+.DS_Store
+
+#env
+.env

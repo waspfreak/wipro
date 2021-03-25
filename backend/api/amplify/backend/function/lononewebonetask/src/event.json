@@ -1,0 +1,44 @@
+{
+    "typeName": "Mutation",
+    "fieldName": "deleteTopicMember",
+    "arguments": {
+        "input": {
+            "id": "123"
+        }
+    },
+    "identity": null,
+    "source": null,
+    "request": {
+        "headers": {
+            "x-forwarded-for": "188.29.164.63, 70.132.46.171",
+            "cloudfront-is-tablet-viewer": "false",
+            "cloudfront-viewer-country": "GB",
+            "dnt": "1",
+            "via": "2.0 a048d6da4903d2784c23b413b9b19b16.cloudfront.net (CloudFront)",
+            "cloudfront-forwarded-proto": "https",
+            "origin": "https://eu-west-2.console.aws.amazon.com",
+            "content-length": "774",
+            "host": "2y5ta7zgjzbi3pdxlwwrf6yrse.appsync-api.eu-west-2.amazonaws.com",
+            "x-forwarded-proto": "https",
+            "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,es;q=0.7",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+            "cloudfront-is-mobile-viewer": "false",
+            "accept": "*/*",
+            "cloudfront-is-smarttv-viewer": "false",
+            "accept-encoding": "gzip, deflate, br",
+            "referer": "https://eu-west-2.console.aws.amazon.com/appsync/home?region=eu-west-2",
+            "x-api-key": "da2-4u5dhoggbzbo3jvg6molzowrbe",
+            "content-type": "application/json",
+            "sec-fetch-mode": "cors",
+            "x-amz-cf-id": "EuLQjacQ5PjlI6JV4omzVku9txkSKlO3TWTzgb2JwYUM5K8uJ2fh2Q==",
+            "x-amzn-trace-id": "Root=1-5e00a646-b4442bccaa252030a53af130",
+            "x-amz-user-agent": "AWS-Console-AppSync/",
+            "cloudfront-is-desktop-viewer": "true",
+            "sec-fetch-site": "cross-site",
+            "x-forwarded-port": "443"
+        }
+    },
+    "prev": {
+        "result": {}
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "onetask",
+    "slug": "onetask",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./App/src/assets/images/icon.png",
+    "splash": {
+      "image": "./App/src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "world.oneweb.onetask"
+    },
+    "android": {
+      "package": "world.oneweb.onetask"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "otask",
+  "name": "otask"
+}

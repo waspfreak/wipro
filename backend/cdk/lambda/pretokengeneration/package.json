@@ -1,0 +1,14 @@
+{
+  "name": "pretokengeneration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/pretokengenerationlambda.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.600.0"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+/lib/*.js
+/bin/*.js
+!lambda/**/src/*.js
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

@@ -1,0 +1,60 @@
+{
+	"develop": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-onetask-develop-154020-authRole",
+			"UnauthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-develop-154020-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-develop-154020-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-onetask-develop-154020-deployment",
+			"UnauthRoleName": "amplify-onetask-develop-154020-unauthRole",
+			"StackName": "amplify-onetask-develop-154020",
+			"StackId": "arn:aws:cloudformation:eu-west-2:219756287403:stack/amplify-onetask-develop-154020/8bdfa510-1c2c-11ea-a911-06452e71541c",
+			"AmplifyAppId": "d31qvulw4at7g3"
+		},
+		"categories": {
+			"auth": {
+				"onetask53739ebf": {}
+			},
+			"function": {
+				"lononewebonetask": {}
+			}
+		}
+	},
+    "developci": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-onetask-developci-152845-authRole",
+            "UnauthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-developci-152845-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-developci-152845-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-onetask-developci-152845-deployment",
+            "UnauthRoleName": "amplify-onetask-developci-152845-unauthRole",
+            "StackName": "amplify-onetask-developci-152845",
+            "StackId": "arn:aws:cloudformation:eu-west-2:219756287403:stack/amplify-onetask-developci-152845/07743b60-4c1a-11ea-af75-064d74357b0e",
+            "AmplifyAppId": "d31qvulw4at7g3"
+        }
+    },
+	"devtwo": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-onetask-devtwo-173152-authRole",
+			"UnauthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-devtwo-173152-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::219756287403:role/amplify-onetask-devtwo-173152-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-onetask-devtwo-173152-deployment",
+			"UnauthRoleName": "amplify-onetask-devtwo-173152-unauthRole",
+			"StackName": "amplify-onetask-devtwo-173152",
+			"StackId": "arn:aws:cloudformation:eu-west-2:219756287403:stack/amplify-onetask-devtwo-173152/dbc5a0d0-42b4-11ea-9697-029db6d88004",
+			"AmplifyAppId": "d31qvulw4at7g3"
+		},
+		"categories": {
+			"auth": {
+				"onetask53739ebf": {}
+			},
+			"function": {
+				"lononewebonetask": {},
+				"searchResolverFunction": {},
+				"onetask": {},
+				"onetask53739ebf": {}
+			}
+		}
+	}
+}

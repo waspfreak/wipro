@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "9e35ab71-b808-439b-bb1c-bd4dac71f6ce",
+		"name": "OneTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createTopic",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation MyMutation2 {\n  __typename\n  createTopic(input: {title: \"Messages Board 1.2\", type:MESSAGE_BOARD, description:\"Message Board 1 - topic description text\", topicParentId:\"42d28fc6-2fc3-42a1-87f4-45ffad23ae0a\", topicRootId:\"e9ae90be-e83e-47b8-9a53-9bdde1f54a61\" }) {\n    id\n    title\n    owner {\n        id\n        profile {\n            name\n            email\n        }\n    }\n    root {\n        id\n        title\n        owner {\n            id\n        }\n    }\n    parent {\n        id\n        title\n        owner {\n            id\n        }\n    }\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTopicMember",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ODJjNzJiMi04NmY1LTQ5MWYtYjc4Yy0yM2Y1NDU0ZmI5YzgiLCJjb2duaXRvOmdyb3VwcyI6W10sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhbGdvcml0aG0iOiJIUzI1NiIsImlzcyI6Imh0dHBzOi8vY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vdXMtZWFzdC0xX2Zha2VfaWRwIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjp0cnVlLCJjb2duaXRvOnVzZXJuYW1lIjoiMWM5ODU2YjktMGQ0OS00ZDlhLWJjZTQtZjFjYWYwZDllN2RlIiwiY29nbml0bzpyb2xlcyI6W10sImF1ZCI6IjJoaWZhMDk2YjNhMjRtdm0zcGhza3VhcWkzIiwiZXZlbnRfaWQiOiIxOGY0MDY3ZS05OTg1LTRlYWUtOWYzMy1mNDVmNDk1NDcwZDAiLCJ0b2tlbl91c2UiOiJpZCIsInBob25lX251bWJlciI6IisxMjA2MjA2MjAxNiIsImV4cCI6MTU3OTMxODk2MiwiZW1haWwiOiJ1c2VyQGRvbWFpbi5jb20iLCJhdXRoX3RpbWUiOjE1NzkyNzU3NjIsImlhdCI6MTU3OTI3NTc2Mn0.IB8hJr9kAbOg6l8A-VKRchCcw28rMn8hAIO7Tl4QH5A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation MyMutation {\n  __typename\n  createTopicMember(input: {topicMemberUserId: \"1f91d38c-424f-43e5-972e-3aa1d110322d\", topicMemberTopicId: \"38a3d522-e071-483d-92c8-198184d04300\", access: MEMBER}) {\n    id\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://172.16.14.57:20002/graphql",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"14",
+						"57"
+					],
+					"port": "20002",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query MyQuery {\n  getTopic(id: \"1c9856b9-0d49-4d9a-bce4-f1caf0d9e7de\") {\n    id\n    title\n    children {\n        items {\n            id\n        }\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxYzk4NTZiOS0wZDQ5LTRkOWEtYmNlNC1mMWNhZjBkOWU3ZGUiLCJjb2duaXRvOmdyb3VwcyI6W10sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhbGdvcml0aG0iOiJIUzI1NiIsImlzcyI6Imh0dHBzOi8vY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vdXMtZWFzdC0xX2Zha2VfaWRwIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjp0cnVlLCJjb2duaXRvOnVzZXJuYW1lIjoiMWM5ODU2YjktMGQ0OS00ZDlhLWJjZTQtZjFjYWYwZDllN2RlIiwiY29nbml0bzpyb2xlcyI6W10sImF1ZCI6IjJoaWZhMDk2YjNhMjRtdm0zcGhza3VhcWkzIiwiZXZlbnRfaWQiOiIxOGY0MDY3ZS05OTg1LTRlYWUtOWYzMy1mNDVmNDk1NDcwZDAiLCJ0b2tlbl91c2UiOiJpZCIsInBob25lX251bWJlciI6IisxMjA2MjA2MjAxNiIsImV4cCI6MTU3OTMxODk2MiwiZW1haWwiOiJ1c2VyQGRvbWFpbi5jb20iLCJhdXRoX3RpbWUiOjE1NzkyNzU3NjIsImlhdCI6MTU3OTI3NTc2Mn0.mvtGBfwOxuhpC6JcQzDj2CNMCdsWEpBvGxTwBFKwO8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query MyQuery {\n  getUser(id: \"1c9856b9-0d49-4d9a-bce4-f1caf0d9e7de\") {\n    id\n    topics {\n        items {\n            id\n            owner {\n                id\n            }\n        }\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listUsers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiMzMyZDFiNy01ZjhmLTQyMjItYjU3YS0wYjI5OWVjMzUxMTAiLCJjb2duaXRvOmdyb3VwcyI6W10sImlzcyI6Imh0dHBzOi8vY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vdXMtZWFzdC0xX2Zha2VfaWRwIiwiaWF0IjoxNTgwMTUzOTIwfQ.yYpnGlLPbAbVorJjQIquItQ1z37P1VFgXGjvxA_cznY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query MyQuery {\n  listUsers {\n    items {\n      id\n      topics {\n        items {\n          id\n        }\n      }\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:20002/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20002",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "\nquery MyQuery {\n  __typename\n  search(input: {\n    query:\"whatever\"\n  }) {\n    type\n    user{\n      id\n      topics {\n        items {\n          id\n          owner {\n              id\n          }\n        }\n      }\n    },\n    topic {\n        id\n        title\n        owner {\n            id\n            topics {\n                items {\n                    id\n                }\n            }\n        }\n    }\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listTopics",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query MyQuery {\n  __typename\n  listTopics(filter: {\n    isRoot :{\n      eq:true\n    }\n  })  {\n    items {\n      id\n      title\n      description\n      type\n      createdAt\n      updatedAt\n      isDeleted\n      isRoot\n      owner {\n          id\n          profile {\n              email\n              name\n          }\n      }\n      root {\n          id\n      }\n      parent {\n          id\n      }\n      children {\n          items {\n              id\n              title\n              type\n              children {\n                  items {\n                      id\n                      title\n                      type\n                  }\n              }\n          }\n      }\n    }\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.66:20002/graphql",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"66"
+					],
+					"port": "20002",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation MyMutation {\n  __typename\n  createUser(input: {profile: {\n    email:\"user@onetask.com\",\n    name:\"User Name\"\n  },id:\"e0634545-a7d4-4693-8612-54574a98402d\"}) {\n    id\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiMzMyZDFiNy01ZjhmLTQyMjItYjU3YS0wYjI5OWVjMzUxMTAiLCJjb2duaXRvOmdyb3VwcyI6W10sImlzcyI6Imh0dHBzOi8vY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vdXMtZWFzdC0xX2Zha2VfaWRwIiwiaWF0IjoxNTgwMTUzOTIwfQ.yYpnGlLPbAbVorJjQIquItQ1z37P1VFgXGjvxA_cznY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation DeleteUser(\n  $input: DeleteUserInput!\n  $condition: ModelUserConditionInput\n) {\n  deleteUser(input: $input, condition: $condition) {\n    id\n    profile {\n      email\n      name\n    }\n    lastAccessedAt\n    createdAt\n    updatedAt\n    topics {\n      nextToken\n    }\n    memberships {\n      nextToken\n    }\n    mentions {\n      nextToken\n    }\n    targets {\n      nextToken\n    }\n    activity {\n      nextToken\n    }\n    notifications {\n      nextToken\n    }\n  }\n}",
+						"variables": "{\n\t\"input\":{\n\t\t\"id\":\"09a5ecfe-81e1-4a43-8f10-b1d2669a5c45\"\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query MyQuery {\n  listUsers {\n    items {\n      id\n      topics {\n        items {\n          id\n        }\n      }\n      memberships {\n          items {\n              id\n              topic {\n                  title\n                  type\n                  owner {\n                      id\n                  }\n              }\n          }\n      }\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTopic",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation MyMutation2 {\n  __typename\n  updateTopic(input: {id: \"f2efd132-0060-455f-9d2c-a194b4aa2aa7\", isDeleted:false, isRoot:true}) {\n    id\n    type\n    owner {\n        id\n        profile {\n            name email\n        }\n    }\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{token}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5a54d67a-458e-421e-b0f9-f8869665eb8c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9ee8b0c7-7c83-4d65-b928-011fd26a31e7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c4c051b6-b1c2-4aae-b75f-f437afda52a4",
+			"key": "host",
+			"value": "http://192.168.1.31:20002",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

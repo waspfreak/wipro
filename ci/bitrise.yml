@@ -1,0 +1,64 @@
+---
+format_version: '8'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: react-native
+trigger_map:
+- push_branch: develop
+  workflow: develop
+- pull_request_source_branch: feature/*
+  workflow: feature
+  pull_request_target_branch: develop
+workflows:
+  develop:
+    steps:
+    - deploy-to-bitrise-io@1.9.2: {}
+  feature:
+    steps:
+    - activate-ssh-key@4.0.3:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4.0.17: {}
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            sudo gem install cocoapods
+        title: Set up CocoaPods
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            yarn global add detox-cli
+            brew tap wix/brew
+            brew install applesimutils --HEAD
+        title: Set up Detox-Cli
+    - yarn@0.1.0:
+        inputs:
+        - workdir: frontend
+        - command: install
+        title: Install node dependencies
+    - yarn@0.1.0:
+        inputs:
+        - workdir: frontend
+        - command: test
+        title: Run unit tests
+    - deploy-to-bitrise-io@1.9.2: {}
+app:
+  envs:
+  - opts:
+      is_expand: false
+    PROJECT_LOCATION: frontend/android
+  - opts:
+      is_expand: false
+    MODULE: app
+  - opts:
+      is_expand: false
+    VARIANT: ''
+  - opts:
+      is_expand: false
+    BITRISE_PROJECT_PATH: frontend/ios/oneweb.xcworkspace
+  - opts:
+      is_expand: false
+    BITRISE_SCHEME: oneweb
+  - opts:
+      is_expand: false
+    BITRISE_EXPORT_METHOD: ad-hoc

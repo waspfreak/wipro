@@ -1,0 +1,60 @@
+{
+    "name": "configmanager",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./index.js",
+    "dependencies": {
+        "@aws-cdk/assert": "^1.19.0",
+        "@aws-cdk/core": "^1.20.0",
+        "@babel/node": "^7.8.4",
+        "aws-amplify": "^2.2.0",
+        "aws-appsync": "^3.0.2",
+        "aws-sdk": "^2.613.0",
+        "babel-cli": "^6.26.0",
+        "cross-fetch": "^3.0.4",
+        "dotenv": "^8.2.0",
+        "exec": "^0.2.1",
+        "faker": "^4.1.0",
+        "graphql-tag": "^2.10.1",
+        "jsonwebtoken": "^8.5.1",
+        "ncp": "^2.0.0",
+        "regenerator-runtime": "^0.13.3",
+        "standard": "^14.3.1",
+        "ts-jest": "^24.2.0",
+        "unfetch": "^4.1.0"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "babel src -d ./",
+        "lint": "../node_modules/eslint/bin/eslint.js --fix ./src"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/tigerspike/lon-oneweb-backend",
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/plugin-transform-runtime": "^7.8.3",
+        "@babel/plugin-transform-typescript": "^7.8.3",
+        "@babel/preset-env": "^7.7.5",
+        "@babel/preset-typescript": "^7.8.3",
+        "@pact-foundation/pact": "^9.5.1",
+        "babel-jest": "^24.9.0",
+        "eslint-plugin-detox": "^1.0.0",
+        "jest": "^24.9.0",
+        "mock-fs": "^4.10.4",
+        "node-cmd": "^3.0.0",
+        "sql-template-strings": "^2.2.2",
+        "sqlite": "^3.0.3",
+        "sqlite3": "^4.1.1",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    },
+    "jest": {
+        "setupFiles": [
+            "dotenv/config"
+        ]
+    },
+    "config": {
+        "pact_do_not_track": true
+    }
+}

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItem tests should match MenuItem snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TouchableWithoutFeedback
+      style={
+        Object {
+          "width": 675,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "paddingLeft": 10,
+            "paddingRight": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingRight": 10,
+              "paddingTop": 4,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "SFProDisplay-Regular",
+              "fontSize": 20,
+              "paddingTop": 8,
+              "width": "85%",
+            }
+          }
+        >
+          <Text />
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#aba7a0",
+                "borderBottomWidth": 1,
+                "flex": 1,
+                "marginTop": 9,
+              }
+            }
+          />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;

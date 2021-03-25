@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopicCard tests should match TopicCard snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "height": 140,
+          "marginBottom": 10,
+          "marginRight": 0,
+          "marginTop": 10,
+          "padding": 10,
+          "paddingRight": 0,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 1,
+          "width": 168,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignContent": "space-between",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "maxHeight": 75,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "SFProDisplay-Bold",
+                "fontSize": 17,
+                "marginBottom": 10,
+                "maxWidth": 168,
+              }
+            }
+            testID="Title"
+          >
+            Title
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../App/src/assets/images/pin.png",
+                }
+              }
+            />
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "SFProDisplay-Regular",
+              "fontSize": 15,
+              "paddingBottom": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          this is a description
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 999999,
+                  "justifyContent": "center",
+                  "marginRight": 2,
+                },
+                Object {
+                  "backgroundColor": "#6d6d6d",
+                },
+                Object {
+                  "height": 25,
+                  "width": 25,
+                },
+                null,
+                null,
+                null,
+                undefined,
+              ]
+            }
+            testID="userAvatarInitials"
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                  },
+                  Object {
+                    "fontSize": 12,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "fontSize": 12.5,
+                  },
+                ]
+              }
+            >
+              FM
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 999999,
+                  "justifyContent": "center",
+                  "marginRight": 2,
+                },
+                Object {
+                  "backgroundColor": "#877457",
+                },
+                Object {
+                  "height": 25,
+                  "width": 25,
+                },
+                null,
+                null,
+                null,
+                undefined,
+              ]
+            }
+            testID="userAvatarInitials"
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                  },
+                  Object {
+                    "fontSize": 12,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "fontSize": 12.5,
+                  },
+                ]
+              }
+            >
+              ST
+            </Text>
+          </View>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>
+</View>
+`;

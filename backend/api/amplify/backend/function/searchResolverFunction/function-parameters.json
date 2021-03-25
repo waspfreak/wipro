@@ -1,0 +1,32 @@
+{
+    "permissions": {
+        "auth": {
+            "onetask53739ebf": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        },
+        "api": {
+            "onetask": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        },
+        "function": {
+            "lononewebonetask": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    },
+    "functionlononewebonetaskName": [],
+    "apionetaskGraphQLAPIIdOutput": [],
+    "apionetaskGraphQLAPIEndpointOutput": [],
+    "authonetask53739ebfUserPoolId":[]
+}

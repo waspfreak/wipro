@@ -1,0 +1,12 @@
+{
+    "AppSyncApiName": "onetask",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authonetask53739ebf",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "APIKeyExpirationEpoch": -1
+}

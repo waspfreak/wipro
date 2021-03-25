@@ -1,0 +1,28 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm index.js",
+  },
+  "dependencies": {
+    "aws-appsync": "^2.0.2",
+    "babel-cli": "^6.26.0",
+    "cross-fetch": "^3.0.4",
+    "es6-promise": "^4.2.8",
+    "esm": "^3.2.25",
+    "fs": "^0.0.1-security",
+    "graphql-tag": "^2.10.1",
+    "inquirer": "^7.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^24.9.0",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0"
+  }
+}

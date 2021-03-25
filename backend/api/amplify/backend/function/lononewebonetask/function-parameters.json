@@ -1,0 +1,15 @@
+{
+    "permissions": {
+        "api": {
+            "onetask": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    },
+    "functionlononewebonetaskName": [],
+    "apionetaskGraphQLAPIIdOutput": [],
+    "apionetaskGraphQLAPIEndpointOutput": []
+}

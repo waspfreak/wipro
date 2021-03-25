@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`New Project or Team tests should match NewProjectOrTeam snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#c6c6c6",
+              "borderBottomWidth": 1,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "height": 50,
+              "justifyContent": "center",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "left": 0,
+              "position": "absolute",
+            }
+          }
+        >
+          <TouchableHighlight
+            activeOpacity={0.85}
+            delayPressOut={100}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 50,
+                  "height": 28,
+                  "justifyContent": "center",
+                  "width": 28,
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+                Object {
+                  "marginLeft": 16,
+                },
+                undefined,
+              ]
+            }
+            testID="backButton"
+            underlayColor="#3478f6"
+          >
+            <View>
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="28"
+                bbWidth="28"
+                focusable={false}
+                height="28"
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    undefined,
+                    Object {
+                      "opacity": 1,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 28,
+                      "width": 28,
+                    },
+                  ]
+                }
+                vbHeight={28}
+                vbWidth={28}
+                width="28"
+              >
+                <RNSVGGroup
+                  fill={
+                    Array [
+                      0,
+                      4278190080,
+                    ]
+                  }
+                  fillOpacity={1}
+                  fillRule={1}
+                  font={Object {}}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={Array []}
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                >
+                  <RNSVGPath
+                    d="M8.292 15.213a1.016 1.016 0 0 1 0-1.426l9.245-9.36a1.431 1.431 0 0 1 2.04 0c.563.57.563 1.496 0 2.066L11.67 14.5l7.909 8.005a1.476 1.476 0 0 1 0 2.066c-.564.57-1.479.57-2.04 0l-9.246-9.36z"
+                    fill={
+                      Array [
+                        0,
+                        4279986889,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={0}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillRule",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+          </TouchableHighlight>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "SFProDisplay-Bold",
+              "fontSize": 17,
+            }
+          }
+        >
+          New Project or Team
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 20,
+            "paddingVertical": 40,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.2}
+          testID="makeTopicButton"
+        >
+          <View
+            style={
+              Object {
+                "alignContent": "center",
+                "alignItems": "center",
+                "alignSelf": "center",
+                "borderColor": "#c6c6c6",
+                "borderWidth": 1,
+                "height": 201,
+                "marginVertical": 5,
+                "paddingHorizontal": 16,
+                "paddingVertical": 12,
+                "textAlign": "center",
+                "width": "90%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "#5856d6",
+                  "borderRadius": 99999,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "marginBottom": 9,
+                  "marginTop": 14,
+                  "width": 40,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "SFProDisplay-Bold",
+                  "fontSize": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+               
+              Make a topic
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "SFProDisplay-Regular",
+                  "fontSize": 13,
+                  "lineHeight": 18,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Use projects for anything you’re working on,  like a marketing, a new product launch, or a project for a client.
+            </Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.2}
+        >
+          <View
+            style={
+              Object {
+                "alignContent": "center",
+                "alignItems": "center",
+                "alignSelf": "center",
+                "borderColor": "#c6c6c6",
+                "borderWidth": 1,
+                "height": 201,
+                "marginVertical": 5,
+                "paddingHorizontal": 16,
+                "paddingVertical": 12,
+                "textAlign": "center",
+                "width": "90%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "#5856d6",
+                  "borderRadius": 99999,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "marginBottom": 9,
+                  "marginTop": 14,
+                  "width": 40,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "SFProDisplay-Bold",
+                  "fontSize": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+               
+              Make a team
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "SFProDisplay-Regular",
+                  "fontSize": 13,
+                  "lineHeight": 18,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Teams help people with similar roles or interests share things and stay coordinated - like a Sales, Marketing, or Customer Support team
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;

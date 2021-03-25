@@ -1,0 +1,88 @@
+{
+  "consumer": {
+    "name": "GraphQLConsumer"
+  },
+  "provider": {
+    "name": "GraphQLProvider"
+  },
+  "interactions": [
+    {
+      "description": "a list of topics query",
+      "request": {
+        "method": "POST",
+        "path": "/graphql",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "body": {
+          "operationName": "ListTopics",
+          "query": "query ListTopics($filter: ModelTopicFilterInput, $limit: Int, $nextToken: String) {\n  listTopics(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    items {\n      id\n      title\n      description\n      isDeleted\n      isRoot\n      type\n      createdAt\n      updatedAt\n      startedAt\n      endedAt\n      keyField\n      __typename\n    }\n    nextToken\n    __typename\n  }\n}\n",
+          "variables": {
+          }
+        },
+        "matchingRules": {
+          "$.body.query": {
+            "match": "regex",
+            "regex": "query\\s*ListTopics\\(\\$filter:\\s*ModelTopicFilterInput,\\s*\\$limit:\\s*Int,\\s*\\$nextToken:\\s*String\\)\\s*\\{\\s*listTopics\\(filter:\\s*\\$filter,\\s*limit:\\s*\\$limit,\\s*nextToken:\\s*\\$nextToken\\)\\s*\\{\\s*items\\s*\\{\\s*id\\s*title\\s*description\\s*isDeleted\\s*isRoot\\s*type\\s*createdAt\\s*updatedAt\\s*startedAt\\s*endedAt\\s*keyField\\s*__typename\\s*\\}\\s*nextToken\\s*__typename\\s*\\}\\s*\\}\\s*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "data": {
+            "listTopics": {
+              "items": [
+                {
+                  "id": "55691225-dd6f-4047-9d74-1941d1717111",
+                  "type": "TEAM",
+                  "description": "Updated topic",
+                  "isDeleted": false,
+                  "isRoot": true,
+                  "title": "Updated topic",
+                  "createdAt": "2020-02-05T11:23:31.644Z",
+                  "updatedAt": "2020-02-05T11:23:31.64Z",
+                  "startedAt": null,
+                  "endedAt": null,
+                  "keyField": "Topic",
+                  "__typename": "Topic"
+                }
+              ],
+              "nextToken": "eyJpZCI6eyJTIjoiZWFkYzM3NGUtN2M5OS00YTFjLWI1M2MtNzhmOGRmMmE0NzcyIn19",
+              "__typename": "ModelTopicConnection"
+            }
+          }
+        },
+        "matchingRules": {
+          "$.body.data.listTopics.items[0].id": {
+            "match": "type"
+          },
+          "$.body.data.listTopics.items[0].type": {
+            "match": "type"
+          },
+          "$.body.data.listTopics.items[0].description": {
+            "match": "type"
+          },
+          "$.body.data.listTopics.items[0].title": {
+            "match": "type"
+          },
+          "$.body.data.listTopics.items[0].createdAt": {
+            "match": "type"
+          },
+          "$.body.data.listTopics.items[0].updatedAt": {
+            "match": "type"
+          }
+        }
+      },
+      "metadata": null
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

@@ -1,0 +1,802 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBarIcon tests sets right images for all possible menu items 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="26"
+        bbWidth="26"
+        focusable={false}
+        height="26"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginTop": 10,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 26,
+              "width": 26,
+            },
+          ]
+        }
+        vbHeight={28}
+        vbWidth={28}
+        width="26"
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4278190080,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={Array []}
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        >
+          <RNSVGPath
+            d="M0.224,10.893 L0.156,10.97 C-0.0160210646,11.1969836 -0.0446358131,11.5018145 0.0821380508,11.7568462 C0.208911915,12.0118779 0.469196959,12.1730994 0.754,12.173 L3.003,12.172 L3.004,21.173 C3.004,21.587 3.34,21.923 3.754,21.923 L9.754,21.923 C10.1682136,21.923 10.504,21.5872136 10.504,21.173 L10.504,15.173 L10.51,15.064 C10.544,14.719 10.867,14.423 11.254,14.423 L12.754,14.423 L12.863,14.429 C13.208,14.463 13.504,14.786 13.504,15.173 L13.504,21.173 C13.504,21.587 13.84,21.923 14.254,21.923 L20.254,21.923 L20.356,21.916 C20.7273036,21.8650291 21.0039842,21.5477858 21.004,21.173 L21.003,12.172 L23.253,12.173 L23.357,12.166 C23.6387872,12.126743 23.8741002,11.9314234 23.9645781,11.6616849 C24.055056,11.3919463 23.9851187,11.0942372 23.784,10.893 L21.003,8.11 L21.004,3.172 C21.004,2.75778644 20.6682136,2.422 20.254,2.422 L16.504,2.422 L16.402,2.429 C16.139484,2.46458233 15.9152129,2.63601668 15.812,2.88 L15.802,2.909 L13.595,0.703 C12.7164326,-0.175026181 11.2925674,-0.175026181 10.414,0.703 L0.224,10.892 L0.224,10.893 Z"
+            fill={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={0}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+                "fillRule",
+                "stroke",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabBarIcon tests sets right images for all possible menu items 2`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="26"
+        bbWidth="26"
+        focusable={false}
+        height="26"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginTop": 10,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 26,
+              "width": 26,
+            },
+          ]
+        }
+        vbHeight={28}
+        vbWidth={28}
+        width="26"
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4278190080,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={Array []}
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        >
+          <RNSVGPath
+            d="M24.5 17.75H17a3 3 0 1 1-6 0H3.5a.75.75 0 0 0-.75.75v3.75a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5V18.5a.75.75 0 0 0-.75-.75zm-.75-3v-9a1.5 1.5 0 0 0-1.5-1.5H12.5a1.5 1.5 0 0 0-1.5 1.5v9m-6.75 0v-6a1.5 1.5 0 0 1 1.5-1.5H8m8.999 1.5h3.751m-6.751 3.75h6.751"
+            fill={null}
+            fillOpacity={1}
+            fillRule={0}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+                "fillRule",
+                "stroke",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabBarIcon tests sets right images for all possible menu items 3`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="26"
+        bbWidth="26"
+        focusable={false}
+        height="26"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginTop": 10,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 26,
+              "width": 26,
+            },
+          ]
+        }
+        vbHeight={28}
+        vbWidth={28}
+        width="26"
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4278190080,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={Array []}
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        >
+          <RNSVGPath
+            d="M12.512 5C8.367 5 5 8.29 5 12.34s3.367 7.342 7.512 7.342c1.64 0 3.155-.516 4.39-1.39l5.814 5.668 1.243-1.215-5.745-5.627a7.211 7.211 0 001.81-4.777C20.023 8.29 16.655 5 12.511 5z"
+            fill={null}
+            fillOpacity={1}
+            fillRule={0}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+                "fillRule",
+                "stroke",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabBarIcon tests sets right images for all possible menu items 4`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="26"
+        bbWidth="26"
+        focusable={false}
+        height="26"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginTop": 10,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 26,
+              "width": 26,
+            },
+          ]
+        }
+        vbHeight={28}
+        vbWidth={28}
+        width="26"
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4278190080,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={Array []}
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        >
+          <RNSVGPath
+            d="M2.26068187,0.75 L20.2606819,0.75 C21.0891091,0.75 21.7606819,1.42157288 21.7606819,2.25 L21.7606819,18.75 C21.7606819,19.5784271 21.0891091,20.25 20.2606819,20.25 L2.26068187,20.25 C1.86285716,20.25 1.48132628,20.0919648 1.20002171,19.8106602 C0.918717135,19.5293556 0.76068187,19.1478247 0.76068187,18.75 L0.76068187,2.25 C0.76068187,1.85217526 0.918717135,1.47064439 1.20002171,1.18933982 C1.48132628,0.908035249 1.86285716,0.75 2.26068187,0.75 Z M0.76068187,5.25 L21.7606819,5.25 L0.76068187,5.25 Z M8.26068197,8.25 C9.86837707,8.25 11.3539487,9.10769513 12.1577963,10.5 C12.9616439,11.8923048 12.9616439,13.6076952 12.1577963,15 C11.3539487,16.3923049 9.86837707,17.25 8.26068197,17.25 C5.77540055,17.25 3.76068197,15.2352813 3.76068197,12.75 C3.76068197,10.2647187 5.77540055,8.25 8.26068197,8.25 L8.26068197,8.25 Z M8.2606819,8.25 L8.2606819,12.75 L11.442682,15.932 L8.2606819,8.25 Z M15.760682,9.75 L18.760682,9.75 L15.760682,9.75 Z M15.760682,12.75 L18.760682,12.75 L15.760682,12.75 Z M15.760682,15.75 L18.760682,15.75 L15.760682,15.75 Z"
+            fill={null}
+            fillOpacity={1}
+            fillRule={0}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+                "fillRule",
+                "stroke",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabBarIcon tests sets right images for all possible menu items 5`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="26"
+        bbWidth="26"
+        focusable={false}
+        height="26"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginTop": 10,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 26,
+              "width": 26,
+            },
+          ]
+        }
+        vbHeight={26}
+        vbWidth={26}
+        width="26"
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4278190080,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={Array []}
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        >
+          <RNSVGGroup
+            fill={null}
+            fillOpacity={1}
+            fillRule={0}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+                "fillRule",
+                "stroke",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={
+              Array [
+                0,
+                4279986889,
+              ]
+            }
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          >
+            <RNSVGPath
+              d="M12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 Z M12,3.562 C13.4069119,3.56217861 14.7068568,4.31292223 15.4101581,5.531433 C16.1134593,6.74994376 16.1132687,8.2511009 15.4096581,9.46943303 C14.7060474,10.6877652 13.4059119,11.4381787 11.999,11.438 C9.82410268,11.4377238 8.06122392,9.67439732 8.06150006,7.4995 C8.0617762,5.32460268 9.82510268,3.56172389 12,3.562 L12,3.562 Z M8.607,5.5 C10.4947628,7.461004 13.4008229,8.04556319 15.9,6.967 L8.607,5.5 Z M4.688,20.437 C4.688,17.8244953 6.08175456,15.4104415 8.34424996,14.1041891 C10.6067454,12.7979368 13.3942546,12.7979368 15.65675,14.1041891 C17.9192454,15.4104415 19.313,17.8244953 19.313,20.437 L4.688,20.437 Z M9.188,13.687 L9.188,14.25 C9.22864249,15.7738225 10.4756356,16.988 12,16.988 C13.5243644,16.988 14.7713575,15.7738225 14.812,14.25 L14.812,13.687 L9.188,13.687 Z"
+              fill={
+                Array [
+                  0,
+                  4278190080,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              name="Shape"
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={Array []}
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabBarIcon tests sets right images for all possible menu items 6`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View />
+  </View>
+</View>
+`;

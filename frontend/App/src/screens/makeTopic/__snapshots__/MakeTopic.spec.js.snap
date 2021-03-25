@@ -1,0 +1,408 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Topic Screen tests should match Topic snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#c6c6c6",
+              "borderBottomWidth": 1,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "height": 50,
+              "justifyContent": "center",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "left": 0,
+              "position": "absolute",
+            }
+          }
+        >
+          <TouchableHighlight
+            activeOpacity={0.85}
+            delayPressOut={100}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 50,
+                  "height": 28,
+                  "justifyContent": "center",
+                  "width": 28,
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+                Object {
+                  "marginLeft": 16,
+                },
+                undefined,
+              ]
+            }
+            testID="backButton"
+            underlayColor="#3478f6"
+          >
+            <View>
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="28"
+                bbWidth="28"
+                focusable={false}
+                height="28"
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    undefined,
+                    Object {
+                      "opacity": 1,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 28,
+                      "width": 28,
+                    },
+                  ]
+                }
+                vbHeight={28}
+                vbWidth={28}
+                width="28"
+              >
+                <RNSVGGroup
+                  fill={
+                    Array [
+                      0,
+                      4278190080,
+                    ]
+                  }
+                  fillOpacity={1}
+                  fillRule={1}
+                  font={Object {}}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={Array []}
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                >
+                  <RNSVGPath
+                    d="M8.292 15.213a1.016 1.016 0 0 1 0-1.426l9.245-9.36a1.431 1.431 0 0 1 2.04 0c.563.57.563 1.496 0 2.066L11.67 14.5l7.909 8.005a1.476 1.476 0 0 1 0 2.066c-.564.57-1.479.57-2.04 0l-9.246-9.36z"
+                    fill={
+                      Array [
+                        0,
+                        4279986889,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={0}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillRule",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+          </TouchableHighlight>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "SFProDisplay-Bold",
+              "fontSize": 17,
+            }
+          }
+        >
+          Make a Topic
+        </Text>
+        <View
+          style={
+            Object {
+              "position": "absolute",
+              "right": 0,
+            }
+          }
+        >
+          <TouchableHighlight
+            activeOpacity={0.85}
+            delayPressOut={100}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#e5e5e5",
+                  "borderColor": "#1b6ac9",
+                  "borderRadius": 50,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "minHeight": 30,
+                  "minWidth": 63,
+                  "padding": 5,
+                  "paddingHorizontal": 16,
+                },
+                Object {
+                  "right": 16,
+                },
+              ]
+            }
+            testID="saveButton"
+            underlayColor="black"
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#FFFFFF",
+                  }
+                }
+              >
+                Save
+              </Text>
+            </View>
+          </TouchableHighlight>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 20,
+            "paddingVertical": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingTop": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "SFProDisplay-Bold",
+                "fontSize": 17,
+                "marginBottom": 11,
+                "paddingBottom": 11,
+              }
+            }
+          >
+            Name this topic
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingTop": 10,
+              }
+            }
+          >
+            <TextInput
+              allowFontScaling={true}
+              placeholder="e.g. Office Renovation"
+              placeholderTextColor="rgba(60, 60, 67, 0.6)"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "borderColor": "rgba(60, 60, 67, 0.6)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "color": "#000000",
+                    "fontFamily": "SFProDisplay-Regular",
+                    "fontSize": 17,
+                    "height": 44,
+                    "padding": 10,
+                    "paddingTop": 10,
+                    "width": "100%",
+                    "zIndex": 0,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingTop": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "SFProDisplay-Bold",
+                "fontSize": 17,
+                "marginBottom": 11,
+                "paddingBottom": 11,
+              }
+            }
+          >
+            Add an additional description
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingTop": 10,
+              }
+            }
+          >
+            <TextInput
+              allowFontScaling={true}
+              multiline={true}
+              placeholder="e.g. Plans and scheduling for expanding the office"
+              placeholderTextColor="rgba(60, 60, 67, 0.6)"
+              rejectResponderTermination={true}
+              style={
+                Array [
+                  Object {
+                    "borderColor": "rgba(60, 60, 67, 0.6)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "color": "#000000",
+                    "fontFamily": "SFProDisplay-Regular",
+                    "fontSize": 17,
+                    "height": 44,
+                    "padding": 10,
+                    "paddingTop": 10,
+                    "width": "100%",
+                    "zIndex": 0,
+                  },
+                  Object {
+                    "height": 80,
+                    "marginTop": 45,
+                    "width": "100%",
+                  },
+                  null,
+                ]
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,58 @@
+{
+  "name": "lon-oneweb-onetask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"For now test via the packages inside\"",
+    "setup-creds": "mv ~/Downloads/credentials ~/.aws/credentials",
+    "pull-environment": "cd backend/api && amplify env pull --restore",
+    "list-environments": "node scripts/backend-environment.js --list",
+    "create-environment": "cd backend/api && amplify env add",
+    "delete-environment": "node scripts/backend-environment.js --delete --envName",
+    "switch-environment": "node scripts/backend-environment.js --switch --envName",
+    "test-api": "cd backend/api && yarn lint && yarn test",
+    "test-frontend": "cd frontend && yarn lint && yarn test && yarn e2e-ios",
+    "test-backend": "cd backend && yarn lint && yarn test && yarn test-consumer && yarn test-provider"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/tigerspike/lon-oneweb-onetask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/tigerspike/lon-oneweb-onetask#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.595.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-detox": "^1.0.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.0.9",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "yargs": "^15.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test-api & yarn test-frontend & yarn test-backend"
+    }
+  },
+  "dependencies": {
+    "@storybook/addon-notes": "^5.3.12",
+    "classnames": "^2.2.6"
+  }
+}

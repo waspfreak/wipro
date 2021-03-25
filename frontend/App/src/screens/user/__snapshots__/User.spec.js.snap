@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User tests should match User snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <ScrollView
+      contentContainerStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "flex": 1,
+          "justifyContent": "center",
+          "paddingBottom": 50,
+          "paddingTop": 15,
+        }
+      }
+    >
+      <Text>
+        The User screen aka 'My stuff' lives here
+      </Text>
+      <Button
+        title="Test global state"
+      />
+      <Button
+        tertiary={true}
+        title="Sign Out"
+      />
+      <Text>
+        {}
+      </Text>
+    </ScrollView>
+  </View>
+</View>
+`;
